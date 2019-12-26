@@ -1,0 +1,462 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Helvetica, sans-serif;
+}
+
+.row {
+    margin-right: 0px;
+    margin-left: 0px;
+}
+
+.main_page {
+    padding-top: 150px;
+    width: 100%;
+    height: 900px;
+    background: #aaa;
+    background: url("img/newyear_img.jpg") center no-repeat;
+}
+
+.about_frontend {
+    margin: 41px 0px;
+    height: 300px;
+}
+
+h1 {    
+    text-align: center;
+    font-size: 64px;
+}
+
+.bootcamp_img {
+    display: block;
+    margin: 0 auto;
+    animation-duration: 3s;
+    animation-name: loop;
+
+}
+
+@keyframes loop {
+    from {
+    transition: 1s;
+    -webkit-transform: scale(0.41);
+    -ms-transform: scale(0.41);
+    transform: scale(0.41);
+}
+
+to {
+    transition: 1s;
+    -webkit-transform: scale(1);
+    -ms-transform: scale(1);
+    transform: scale(1);
+}
+
+}
+
+.main_page h2 {
+    text-align: center;
+    margin-top: 40px;
+    color: #fff;
+    font-size: 96px;
+    font-family: 'Kaushan Script', cursive;
+}
+
+.programm_icons {
+    padding-top: 41px;
+    display: flex;
+}
+.programm_icons img{
+    margin-left: 80px;
+    width: 180px;
+}
+
+.plus_minus {
+    padding-left: 0px;
+}
+
+.plus_minus_img {
+    width: 100%;
+    margin: 0 auto;
+    margin-left: 0px;
+}
+
+.plus_minus h2{
+    font-size: 64px;
+}
+
+.plus_minus h3{
+    margin-top: 19px;
+    font-size: 36px;
+}
+
+.plus_minus ul{
+    margin-top: 19px;
+}
+
+.plus_minus li {
+    font-size: 30px;
+}
+
+.job {
+    background: url("img/job.png") center no-repeat;
+    height: 800px;
+    padding-left: 350px;
+    padding-top: 200px;
+}
+
+.sub_work {
+    font-weight: 400;
+    width: 1000px;
+    font-size: 54px;
+    color: #fff;
+}
+
+.work {
+    font-size: 156px;
+    color: #fff;
+}
+
+.brains {
+    position: relative;
+}
+
+.brain_img {
+    width: 100%;
+    margin: 0 auto;
+    margin-top: 40px
+}
+
+.brains p {
+    color: #fff;
+    font-size: 96px;
+    position: absolute;
+    top: 400px;
+    margin-left: 350px;
+    z-index: 1;
+}
+
+.brains_ul {
+    margin-top: 40px;
+}
+
+.brains_item {
+    font-size: 30px;
+}
+
+/*slider on Javascript
+    start
+*/
+
+/* Собственно сам слайдер */
+.slider{
+    max-width: 100%;
+    position: relative;
+    margin: auto;
+    height: 600px;
+    margin-bottom: 15px;
+}
+/* Картинка мастабируется по отношению к родительскому элементу */
+.slider .item img {
+    object-fit: cover;
+    width: 100%;
+    height: 600px;
+    border: none !important;
+    box-shadow: none !important;
+}
+/* Кнопки вперед и назад */
+.slider .prev, .slider .next {
+    cursor: pointer;
+    position: absolute;
+    top: 0;
+    top: 50%;
+    width: auto;
+    margin-top: -62px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 54px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+}
+.slider .next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+/* При наведении на кнопки добавляем фон кнопок */
+.slider .prev:hover,
+.slider .next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+/* Заголовок слайда */
+.slideText {
+    position: absolute;
+    color: #fff;
+    font-size: 64px;
+    /* Выравнивание текста по горизонтали и по вертикали*/
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    /* Тень*/
+    text-shadow: 1px 1px 1px #000, 0 0 1em #000;
+}
+/* Кружочки */
+.slider-dots {
+    text-align: center;
+}
+.slider-dots_item{
+    cursor: pointer;
+    height: 12px;
+    width: 12px;
+    margin: 0 2px;
+    background-color: #ddd;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+.active,
+.slider-dots_item:hover {
+    background-color: #aaa;
+}
+/* Анимация слайдов */
+.slider .item {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+@-webkit-keyframes fade {
+    from {
+        opacity: .4
+    }
+    to {
+        opacity: 1
+    }
+}
+@keyframes fade {
+    from {
+        opacity: .4
+    }
+    to {
+        opacity: 1
+    }
+}
+
+
+
+
+
+/*slider on Javascript
+    end slider
+*/
+.salaries {
+    margin-top: 41px;
+}
+
+.salaries h3 {
+    text-align: center;
+    font-size: 48px;
+}
+
+footer {
+    padding-top: 92px;
+    width: 100%;
+    height: 236px;
+    background-color: #434343;
+}
+
+footer p {
+    font-size: 36px;
+    color: #fff;
+    text-align: center;
+}
+
+footer img {
+    width: 200px;
+    display: block;
+    margin: 0 auto;
+}
+
+@media only screen and (max-width: 1480px) and (min-width: 1210px) {
+    
+    .job {
+        background: url("img/job.png") center no-repeat;
+        height: 800px;
+        padding-left: 150px;
+        padding-top: 200px;
+    }
+
+    .plus_minus_img {
+        width: 88%;
+        margin: 0 auto;
+        margin-left: 80px;
+    }
+    
+    .sub_work {
+        font-weight: 400;
+        width: 1000px;
+        font-size: 54px;
+        color: #fff;
+    }
+
+}
+
+@media only screen and (max-width: 1210px) and (min-width: 1074px) {
+    
+    .programm_icons img{
+        margin-left: 60px;
+        width: 145px;
+    }
+
+    .plus_minus_img {
+        width: 85%;
+        margin: 0 auto;
+        margin-left: 80px;
+    }
+
+
+    .job {
+        background: url("img/job.png") center;
+        height: 800px;
+        padding-left: 50px;
+        padding-top: 200px;
+    }
+
+    .sub_work {
+        font-weight: 400;
+        width: 1000px;
+        font-size: 54px;
+        color: #fff;
+    }
+}
+
+@media only screen and (max-width: 1074px) and (min-width: 920px) {
+    
+    .programm_icons img{
+        margin-left: 62px;
+        width: 130px;
+    }
+
+    .plus_minus_img {
+        width: 82%;
+        margin: 0 auto;
+        margin-left: 80px;
+    }
+
+    .job {
+        background: url("img/job.png") center no-repeat;
+        height: 800px;
+        padding-left: 40px;
+        padding-top: 200px;
+    }
+
+    .work {
+        font-size: 132px;
+        color: #fff;
+    }
+
+    .sub_work {
+        font-weight: 400;
+        width: 920px;
+        font-size: 54px;
+        color: #fff;
+    }
+
+    .brains p {
+        color: #fff;
+        font-size: 96px;
+        position: absolute;
+        top: 300px;
+        margin-left: 80px;
+        z-index: 1;
+    }
+
+}
+
+@media only screen and (max-width: 920px) and (min-width: 740px) {
+    
+    .plus_minus_img {
+        width: 80%;
+        margin: 0 auto;
+        margin-left: 80px;
+    }
+    
+    h1 {
+        font-size: 48px;
+    }
+
+    .programm_icons img{
+        margin-left: 45px;
+        width: 110px;
+    }
+
+    .job {
+        background: url("img/job.png") center no-repeat;
+        height: 800px;
+        padding-left: 20px;
+        padding-top: 200px;
+    }
+
+    .work {
+        font-size: 112px;
+        color: #fff;
+    }
+
+    .sub_work {
+        font-weight: 400;
+        width: 720px;
+        font-size: 54px;
+        color: #fff;
+    }
+ 
+    .brains p {
+        color: #fff;
+        font-size: 96px;
+        position: absolute;
+        top: 150px;
+        margin-left: 80px;
+        z-index: 1;
+    }
+
+}
+
+@media only screen and (max-width: 740px) and (min-width: 560px) {
+    
+    .plus_minus_img {
+        width: 80%;
+        margin: 0 auto;
+        margin-left: 50px;
+    }
+    
+    .programm_icons img{
+        margin-left: 30px;
+        width: 90px;
+    }
+
+    .job {
+        background: url("img/job.png") center no-repeat;
+        height: 800px;
+        padding-left: 20px;
+        padding-top: 200px;
+    }
+
+    .work {
+        font-size: 112px;
+        color: #fff;
+    }
+
+    .sub_work {
+        font-weight: 400;
+        width: 540px;
+        font-size: 54px;
+        color: #fff;
+    }
+ 
+    .brains p {
+        color: #fff;
+        font-size: 86px;
+        position: absolute;
+        top: 100px;
+        margin-left: 40px;
+        z-index: 1;
+    }
+
+}
